@@ -68,6 +68,17 @@ mark {
 .skill {
   font-size: 11px;
 }
-a {
+.link {
+  padding-left: 10px;
+  font-size: 10px;
+}
+.logo {
+  width: 30px;
+}
+.footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
   font-size: 10px;
 }
