@@ -33,3 +33,13 @@ figure {
   margin-left: 0;
   margin-right: 0;
 }
+.contact {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 10px;
+  font-size: 10px;
+  color: black;
+}
+.icon {
+  width: 12px;
+}
