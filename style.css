@@ -23,3 +23,13 @@ body {
   width: 300px;
   background-color: white;
 }
+.photo {
+  width: 170px;
+}
+figure {
+  width: 170px;
+  height: 212px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
