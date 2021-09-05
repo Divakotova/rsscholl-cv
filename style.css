@@ -45,7 +45,6 @@ figure {
 }
 h1 {
   text-align: center;
-  margin-top: 40px;
   border-bottom: 2px solid #ff6347;
   padding-bottom: 10px;
 }
@@ -63,7 +62,7 @@ p {
 }
 mark {
   background-color: #ff6347;
-  font-weight: 900;
+  font-weight: 1000;
 }
 .skill {
   font-size: 11px;
@@ -76,6 +75,12 @@ mark {
   width: 30px;
 }
 .footer {
+  display: flex;
+  align-items: stretch;
+  margin: auto;
+  padding: 0;
+  width: 500px;
+  height: 650px;
   list-style: none;
   display: flex;
   justify-content: space-around;
