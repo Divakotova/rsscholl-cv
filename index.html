@@ -10,16 +10,32 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
   <body>
     <header class="header-container">
       <h5 class="name">Summary Frontend Developer</h5>
       <nav class="navigation-container">
         <ul class="navigation">
-          <li class="nav-item"><a href="#skills">Skills</a></li>
-          <li class="nav-item"><a href="#education">Education</a></li>
-          <li class="nav-item"><a href="#code-example">Code example</a></li>
-          <li class="nav-item"><a href="#lenguages">Lenguages</a></li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#code-example" class="nav-link">Code example</a>
+          </li>
+          <li class="nav-item">
+            <a href="#lenguages" class="nav-link">Lenguages</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -60,7 +76,11 @@
               src="free-icon-github-photo-resizer.ru_photo-resizer.ru.png"
               alt="icon"
             />
-            <a href="https://github.com/Divakotova" target="_blank">
+            <a
+              href="https://github.com/Divakotova"
+              target="_blank"
+              class="nav-link"
+            >
               Divakotova</a
             >
           </li>
@@ -119,12 +139,28 @@
           <li>Tools: Git, Git Hub, VS Code</li>
         </ul>
         <h4 id="code-example">CODE EXAMPLE</h4>
+
+        <pre><code class="html">
+    function getMatrix(number) {
+      let arr = new Array(number);
+      for(let i=0; i < number; i++){
+      arr[i] = new Array(number);
+         for(let j=0; j < number; j++){
+        arr[i][j] = 0;
+        }
+        arr[i][i] = 1;
+      }
+    return arr;
+    } 
+    console.log(getMatrix(2))  
+    </code></pre>
+        <p>My recent projects Website Louvre</p>
         <a
           class="link"
-          href="https://github.com/Divakotova/Code-example"
+          href="https://rolling-scopes-school.github.io/divakotova-JSFEPRESCHOOL/museum/"
           target="_blank"
-          >Code-example</a
-        >
+          ><img src="./museum.png" alt="Website Louvre" class="website-image"
+        /></a>
       </section>
     </main>
     <footer class="footer-container">
@@ -135,7 +171,11 @@
             src="free-icon-github-photo-resizer.ru_photo-resizer.ru.png"
             alt="icon"
           />
-          <a href="https://github.com/Divakotova" target="_blank">
+          <a
+            href="https://github.com/Divakotova"
+            target="_blank"
+            class="nav-link"
+          >
             Divakotova</a
           >
         </li>
