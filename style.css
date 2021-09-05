@@ -74,16 +74,18 @@ mark {
 .logo {
   width: 30px;
 }
-.footer {
-  display: flex;
-  align-items: stretch;
+.footer-container {
   margin: auto;
   padding: 0;
   width: 500px;
-  height: 650px;
+  height: 20px;
+}
+.footer {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 10px;
+  padding-right: 10px;
   font-size: 10px;
 }
