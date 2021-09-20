@@ -18,6 +18,26 @@
   <body>
     <header class="header-container">
       <h5 class="name">Summary Frontend Developer</h5>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li class="menu__item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="menu__item">
+            <a href="#code-example" class="nav-link">Code example</a>
+          </li>
+          <li class="menu__item">
+            <a href="#lenguages" class="nav-link">Lenguages</a>
+          </li>
+        </ul>
+      </div>
       <nav class="navigation-container">
         <ul class="navigation">
           <li class="nav-item">
@@ -136,15 +156,19 @@
         </ul>
         <h4 id="code-example">CODE EXAMPLE</h4>
 
-        <p>My recent projects</p>
-        <p>Website Louvre</p>
+        <p class="heading-description">Website Louvre:</p>
+        <p>fixed layout of the site is implemented</p>
         <a
           class="link"
           href="https://rolling-scopes-school.github.io/divakotova-JSFEPRESCHOOL/museum/"
           target="_blank"
           ><img src="./museum.png" alt="Website Louvre" class="website-image"
         /></a>
-        <p>Vertical Slider</p>
+        <p class="heading-description">Vertical Slider:</p>
+        <p>
+          implemented infinite slider scrolling and sliding slides in opposite
+          directions
+        </p>
         <a
           class="link"
           href="https://rolling-scopes-school.github.io/divakotova-JSFEPRESCHOOL/vertical-slider/"
@@ -154,16 +178,17 @@
             alt="Website Louvre"
             class="website-image"
         /></a>
-        <pre class="prettyprint"><code class="html"> 
-    <span class="">function</span> <span>getParticipants(handshakes)</span> <span>{</span> 
-      <span class="">let</span> <span>sqr</span> <span>=</span> <span>Math.sqrt(handshakes*2)</span>  
-      <span class="">let</span> <span>peopleCount</span> <span>=</span> <span>Math.floor(sqr);</span>  
-      <span>if</span> <span>((sqr - peopleCount) > 0.5)</span> <span>{</span> 
-     <span>return</span> <span>peopleCount + 2</span> 
-     <span>}</span> 
-     <span>return </span> <span>peopleCount + 1</span>  
-   <span>}</span> 
-      </code></pre>
+        <p class="heading-description">Solution a task from Codewars:</p>
+        <pre class="prettyprint"><code class="javascript"> 
+    function getParticipants(handshakes){ 
+      let sqr = Math.sqrt(handshakes*2)  
+      let peopleCount = Math.floor(sqr);  
+      if ((sqr - peopleCount) > 0.5) { 
+      return peopleCount + 2 
+      }
+     return peopleCount + 1  
+    } 
+         </code></pre>
       </section>
     </main>
     <footer class="footer-container">
