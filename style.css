@@ -1,4 +1,6 @@
 html {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 body {
@@ -7,7 +9,7 @@ body {
   max-width: 750px;
   padding: 0;
   margin: auto;
-  background: radial-gradient(40% 50%, #fafafa, #cccece);
+  background: radial-gradient(70% 50%, #e77a14, #cccece);
 }
 .main-content-container {
   display: flex;
@@ -101,6 +103,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .name {
   margin: 0;
@@ -122,7 +125,7 @@ a {
 .nav-item {
   display: inline;
   list-style: none;
-  margin-right: 3vw;
+  margin-right: 1vw;
 }
 .nav-item:last-child {
   margin-right: 0px;
@@ -131,7 +134,7 @@ a {
 .nav-link:active,
 .link:hover,
 .link:active {
-  color: chocolate;
+  color: rgb(235, 16, 16);
 }
 .website-image {
   max-width: 50%;
@@ -139,7 +142,10 @@ a {
 .html {
   max-width: 90%;
 }
-
+.heading-description {
+  font-weight: 900;
+  color: #f83f1f;
+}
 .footer {
   padding: 0;
   list-style: none;
@@ -147,4 +153,103 @@ a {
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
+}
+
+/* "бургер-меню" */
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #080808;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 50px;
+  left: -100%;
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 20px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu__item {
+  display: block;
+  padding: 3px 12px;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 0.8em;
+  }
+  h3,
+  h4,
+  p,
+  .name,
+  .contact,
+  .nav-link {
+    font-size: 0.65em;
+  }
+  .icon {
+    width: 13%;
+  }
+  .navigation {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+  }
+  .menu__box {
+    left: 65%;
+  }
 }
