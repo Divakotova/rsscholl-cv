@@ -190,7 +190,7 @@ a {
 }
 
 .menu__box {
-  display: block;
+  display: none;
   position: absolute;
   visibility: hidden;
   top: 50px;
@@ -204,7 +204,7 @@ a {
 }
 
 .menu__item {
-  display: block;
+  display: none;
   padding: 3px 12px;
   color: #333;
   font-weight: 600;
@@ -228,7 +228,7 @@ a {
   visibility: visible;
 }
 
-@media all and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   h1 {
     font-size: 0.8em;
   }
@@ -246,10 +246,12 @@ a {
   .navigation {
     display: none;
   }
-  .menu__btn {
+  .menu__btn,
+  .menu__item {
     display: block;
   }
   .menu__box {
+    display: block;
     left: 65%;
   }
 }
